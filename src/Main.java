@@ -4,9 +4,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-
-        System.out.println("Hello ween!");
-
+        
         Basket vasyaBasket = new Basket();
         vasyaBasket.add(new Product("Молоко", 80), 2);
         vasyaBasket.add(new Product("Хлеб", 40));
