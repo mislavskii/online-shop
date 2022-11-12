@@ -9,6 +9,11 @@ public class Product {
         this.count = 1;
     }
 
+    public Product(String name, int price, int count) {
+        this(name, price);
+        this.count = count;
+    }
+
     public String getName() {
         return name;
     }
