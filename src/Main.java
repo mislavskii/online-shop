@@ -6,12 +6,12 @@ public class Main {
     public static void main(String[] args) {
 
         Basket vasyaBasket = new Basket();
-        vasyaBasket.add(new Product("Молоко", 80), 2);
-        vasyaBasket.add(new Product("Хлеб", 40));
+        vasyaBasket.addProduct(new Product("Молоко", 80), 2);
+        vasyaBasket.addProduct(new Product("Хлеб", 40));
 
         Basket petyaBasket = new Basket(350);
-        petyaBasket.add(new Product("Лопата", 280));
-        petyaBasket.add(new Product("Бочка", 2900));
+        petyaBasket.addProduct(new Product("Лопата", 280), 2);
+        petyaBasket.addProduct(new Product("Бочка", 2900));
 
         Basket mashaBasket = new Basket(new ArrayList<>(List.of(new Product[]{new Product("Стол", 5000)})), 50000);
 
@@ -20,6 +20,18 @@ public class Main {
         mashaBasket.print("Корзина Маши:");
         System.out.println(mashaBasket.getTotalPrice());
 
+        System.out.println();
+        System.out.println("Появилась DiscountedBasket");
+        DiscountedBasket vovaBasket = new DiscountedBasket();
+
+        Product milk = new Product("молоко", 56);
+        System.out.println(milk);
+
+        vovaBasket.addProduct(milk);
+        vovaBasket.print("Корзина Вовы:");
+        System.out.println(milk);
     }
+
+
 
 }

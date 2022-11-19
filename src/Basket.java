@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+//TODO: Add basket title to class variables, refactor accordingly
+
 public class Basket {
     private ArrayList<Product> items = new ArrayList<>();
     private int totalPrice = 0;
@@ -22,17 +24,17 @@ public class Basket {
     }
 // ^^^Above are all constructors^^^
 
-    public void add(Product product) {  // overloaded method
-        add(product, 1);  // adding single piece of product
+    public void addProduct(Product product) {  // overloaded method
+        addProduct(product, 1);  // adding single piece of product
     }
 
-    public void add (Product product, int count) {  // adding any number of pieces
+    public void addProduct(Product product, int count) {  // adding any number of pieces
         if (contains(product)) {
             System.out.println("Товар уже есть в корзине.");
             return;
         }
         if (totalPrice + product.getPrice() * count > limit) {
-            System.out.printf("Превышен лимит, собака. Добавление товара \"%s\" нежелательно.%n%n", product.getName());
+            System.out.printf("Превышен лимит, собака. Добавление товара \"%s\" в количестве %d шт. нежелательно.%n", product.getName(), count);
             return;
         }
         product.setCount(count);
@@ -40,10 +42,11 @@ public class Basket {
         totalPrice = getTotalPrice();
     }
 
+
     public int getTotalPrice(){
         totalPrice = 0;
         for (Product item : items) {
-            totalPrice += item.getPrice();
+            totalPrice += item.getPrice() * item.getCount();
         }
         return totalPrice;
     }

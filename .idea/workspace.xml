@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e519cabf-9ca7-401c-af7c-c972fbd2c657" name="Changes" comment="basket and product drafted">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e519cabf-9ca7-401c-af7c-c972fbd2c657" name="Changes" comment="added product constructor taking count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,7 @@
       <workItem from="1667890382359" duration="1235000" />
       <workItem from="1667962902279" duration="658000" />
       <workItem from="1667966038810" duration="1835000" />
+      <workItem from="1668866261303" duration="1136000" />
     </task>
     <task id="LOCAL-00001" summary="basket and product drafted">
       <created>1667713545952</created>
@@ -70,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667713545952</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added product constructor taking count">
+      <created>1668866590417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668866590417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basket and product drafted" />
-    <option name="LAST_COMMIT_MESSAGE" value="basket and product drafted" />
+    <MESSAGE value="added product constructor taking count" />
+    <option name="LAST_COMMIT_MESSAGE" value="added product constructor taking count" />
   </component>
 </project>

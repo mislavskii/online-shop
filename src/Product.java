@@ -1,5 +1,5 @@
 public class Product {
-    private String name;
+    private final String name;
     private int price;
     private int count;
 
@@ -16,10 +16,6 @@ public class Product {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getPrice() {
