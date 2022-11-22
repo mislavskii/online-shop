@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-//TODO: Add basket title to class variables, refactor accordingly
+// TODO: Add basket title to class variables, refactor accordingly
 
 public class Basket {
     private ArrayList<Product> items = new ArrayList<>();

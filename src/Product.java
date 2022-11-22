@@ -1,6 +1,6 @@
 public class Product {
     private final String name;
-    private int price;
+    private final int price;
     private int count;
 
     public Product(String name, int price) {
@@ -18,12 +18,15 @@ public class Product {
         return name;
     }
 
+    public Product setName(String name) {
+        return new Product(name, price);
+    }
     public int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public Product setPrice(int price) {
+        return new Product(name, price);
     }
 
     public int getCount() {

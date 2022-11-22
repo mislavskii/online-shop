@@ -30,8 +30,7 @@ public class Main {
         vovaBasket.addProduct(milk);
         vovaBasket.print("Корзина Вовы:");
         System.out.println(milk);
+
     }
-
-
 
 }
