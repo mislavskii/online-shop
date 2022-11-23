@@ -31,6 +31,13 @@ public class Main {
         vovaBasket.print("Корзина Вовы:");
         System.out.println(milk);
 
+        System.out.println();
+
+        ContactDetails details = new ContactDetails("Thailand", "Bangkok", "Onnut35", 339, 301, "0873440160");
+        Customer jet = new Customer("Somying Khonboon", details);
+
+        System.out.println(jet);
+
     }
 
 }

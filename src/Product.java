@@ -21,6 +21,7 @@ public class Product {
     public Product setName(String name) {
         return new Product(name, price);
     }
+
     public int getPrice() {
         return price;
     }
