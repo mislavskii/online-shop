@@ -6,11 +6,11 @@ public class Basket {
     private ArrayList<Product> items = new ArrayList<>();
     private int totalPrice = 0;
     private int limit = 1000000;
-    public static int count = 0;
+    private static int basketCount = 0;
 
     public Basket() {
         String description = "Список товаров:\n";
-        count += 1;
+        increaseBasketCount(1);
     }
 
     public Basket(int limit){
@@ -44,6 +44,13 @@ public class Basket {
         totalPrice = getTotalPrice();
     }
 
+    public static int getBasketCount() {
+        return basketCount;
+    }
+
+    public static void increaseBasketCount(int basketCount) {
+        Basket.basketCount = Basket.basketCount + basketCount;
+    }
 
     public int getTotalPrice(){
         totalPrice = 0;

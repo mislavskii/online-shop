@@ -31,11 +31,15 @@ public class Main {
         vovaBasket.print("Корзина Вовы:");
         System.out.println(milk);
 
-        System.out.println("Total baskets: " + Basket.count);
+        System.out.println("Total baskets: " + Basket.getBasketCount());
 
         Session session = new Session();
 
-        System.out.println("Total baskets: " + Basket.count);
+        System.out.println("Total baskets: " + Basket.getBasketCount());
+
+        createBasket();
+        System.out.println("Total baskets: " + Basket.getBasketCount());
+
 
         System.out.println();
 
@@ -44,6 +48,10 @@ public class Main {
 
         System.out.println(jet);
 
+    }
+
+    public static void createBasket() {
+        Basket ghostBasket = new Basket();
     }
 
 }
