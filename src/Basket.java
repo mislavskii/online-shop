@@ -6,9 +6,11 @@ public class Basket {
     private ArrayList<Product> items = new ArrayList<>();
     private int totalPrice = 0;
     private int limit = 1000000;
+    public static int count = 0;
 
     public Basket() {
         String description = "Список товаров:\n";
+        count += 1;
     }
 
     public Basket(int limit){

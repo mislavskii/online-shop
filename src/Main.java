@@ -31,6 +31,12 @@ public class Main {
         vovaBasket.print("Корзина Вовы:");
         System.out.println(milk);
 
+        System.out.println("Total baskets: " + Basket.count);
+
+        Session session = new Session();
+
+        System.out.println("Total baskets: " + Basket.count);
+
         System.out.println();
 
         ContactDetails details = new ContactDetails("Thailand", "Bangkok", "Onnut35", 339, 301, "0873440160");
