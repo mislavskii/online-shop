@@ -4,7 +4,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-onlineShop.iml
+*.iml
 
 /onlineShop.iml
 /.idea/
