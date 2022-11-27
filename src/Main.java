@@ -48,6 +48,9 @@ public class Main {
 
         System.out.println(jet);
 
+        var order = new DeliveryOrder(Carrier.PEDESTRIAN, Fragile.NO, Cold.YES);
+        order.deliver();
+
     }
 
     public static void createBasket() {
